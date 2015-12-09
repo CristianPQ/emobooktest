@@ -11,7 +11,28 @@
 
 module.exports.bootstrap = function(cb) {
 
+	cb();
+	// Emoji.create([{
+	// 	text: '=)'
+	// }, {
+	// 	text: ':('
+	// }, {
+	// 	text: ';p'
+	// }]).exec(function(err, result){
+	// 	if (err) {
+	// 		console.log('it did NOT WORK OMG', err);
+	// 		//handel the error case
+	// 		cb(err);
+	// 	}
+	// 	else {
+	// 		//handle the succes case
+	// 		//cb();
+	// 		console.log('it worked');
+	// 		cb();
+	// 	}
+	// })
+
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
-  cb();
+  
 };
